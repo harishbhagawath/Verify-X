@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Verify X - Before Login</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="hero">
+
+        <!-- Top bar -->
+        <header class="top-bar">
+            <div class="logo">VX</div>
+
+            <div class="auth-buttons">
+                <button class="btn btn-ghost">Login</button>
+                <button class="btn btn-filled">Sign up</button>
+            </div>
+        </header>
+
+        <!-- LEFT / RIGHT SLIDE BUTTONS -->
+        <button class="slide-btn slide-left" id="prevSlide">
+            &larr;
+        </button>
+        <button class="slide-btn slide-right" id="nextSlide">
+            &rarr;
+        </button>
+
+        <!-- CENTER: Title + Slogan (fade out when typing) -->
+        <main class="center-content">
+            <h1 class="title">Verify X</h1>
+            <p class="subtitle">Verify the Truth. Expose the Fake.</p>
+        </main>
+
+        <!-- BOTTOM: Search Bar -->
+        <div class="bottom-search">
+            <div class="search-bar">
+                <input
+                    type="text"
+                    id="queryInput"
+                    placeholder="Type Something............"
+                />
+                <button class="send-btn" id="sendBtn">
+                    &uarr;
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+</body>
+</html>

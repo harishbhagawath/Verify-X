@@ -1,0 +1,27 @@
+transformers
+torch
+pillow
+opencv-python
+numpy
+qdrant-client
+python-dotenv
+openai
+requests
+tqdm
+
+# For backend multimedia
+pydub
+moviepy
+
+# Optional OCR / Captioning / Whisper
+pytesseract
+pytube
+torchvision
+torchaudio
+
+# Django Backend (if used)
+django
+djangorestframework
+
+# Utilities
+ffmpeg-python

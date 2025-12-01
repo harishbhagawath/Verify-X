@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Verify X</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="hero">
+        <div class="logo">VX</div>
+
+        <div class="center-content">
+            <h1 class="title">Verify X</h1>
+            <p class="subtitle">Verify the Truth. Expose the Fake.</p>
+        </div>
+
+        <button class="slide-btn slide-left" id="leftArrow">&larr;</button>
+        <button class="slide-btn slide-right" id="rightArrow">&rarr;</button>
+
+        <div class="main-wrapper">
+            <div class="chat-container" id="chatContainer">
+                </div>
+
+            <div class="bottom-search">
+                <div class="search-bar">
+                    <div id="fileNotationContainer" class="hidden">
+                        <span id="fileNameDisplay"></span>
+                        <button id="clearFileBtn" class="clear-btn">&times;</button>
+                    </div>
+                 
+                    <div class="verifyx-footer-note">
+    <strong>VERIFY X</strong>  can make mistakes. Because it is in developing.
+</div>
+
+                    <input
+                        id="queryInput"
+                        type="text"
+                        placeholder="Type something.."
+                        autocomplete="off"
+                    />
+                    <div class="input-actions">
+                        <button
+    class="circle-btn"
+    id="addFileBtn"
+    aria-label="Select image or video file"
+    title="Select image or video file"
+>
+    +
+</button>
+
+                        <button class="circle-btn" id="sendBtn">&#8593;</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <aside class="side-panel generation-panel" id="generationPanel">
+            <h2 class="panel-title">Image Generation</h2>
+            <p class="panel-subtitle">Create AI-powered visuals</p>
+            <p class="panel-desc">
+                Type <strong>#generate image</strong> in the chat bar to open this panel
+                and send a request.
+            </p>
+            <div id="imageDisplayArea">
+                <p id="generationInstructions">Type command to start.</p>
+                <div id="imageHistoryContainer">
+                    </div>
+            </div>
+            </aside>
+
+        <aside class="side-panel secure-panel" id="securePanel">
+            <h2 class="panel-title">Secure Detect</h2>
+            <p class="panel-subtitle">Results</p>
+            <div class="results-box" id="secureResultsBox">
+                <p id="secureInstructions">Upload a file and use <strong>#evaluation &lt;prompt&gt;</strong> to begin analysis.</p>
+                <div id="secureHistoryContainer">
+                    </div>
+            </div>
+        </aside>
+    </div>
+
+    <input
+    type="file"
+    id="fileInput"
+    class="hidden-input"
+    accept="image/*, video/*"
+    style="display: none;"
+    aria-label="Upload image or video for evaluation"
+/>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
